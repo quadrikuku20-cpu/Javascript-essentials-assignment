@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!--Header-->
+    <header>
+        <h1>Staff Information</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="staff.html">Staff Page</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <h2>Staff List</h2>
+
+        <button onclick="sortByName()">
+            Sort By Name
+        </button>
+
+        <button onclick="sortBySalary()">
+            Sort By Salary
+        </button>
+
+         <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+
+            <tbody id="staffTableBody">
+            </tbody>
+        </table>
+
+    </main>
+
+     <!--Footer-->
+
+    <footer>
+        <p>
+            © 2026 AbdulQuadri Kuku |
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="staff.js"></script>
+
+    
+</body>
+</html>

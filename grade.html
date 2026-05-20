@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>Welcome to My Profile page</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="staff.html">Staff Page</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <h2>Convert Mark to Grade</h2>
+
+        <label for="mark-input-box">
+            Enter Student Mark:
+        </label>
+
+        <input
+            type="text"
+            id="mark-input-box"
+            placeholder="Enter mark between 0 and 100">
+            <button onclick="MarkToGrade()">
+                Convert Grade
+            </button>
+
+            <h3 id="result"></h3>
+            <p id="validation-message"></p>
+
+    </main>
+
+    <!--FOOTER-->
+
+     <footer>
+        <p>
+            © 2026 AbdulQuadri Kuku |
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="grade.js"></script>
+    
+</body>
+</html>

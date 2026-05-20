@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <h1>Temperature Converter</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="staff.html">Staff Page</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+
+        <h2> Convert Temperature</h2>
+
+        <!--Celsius-->
+        <label> Celsius </label>
+        <input  
+             type="number"
+             id="celsius"
+             placeholder="Enter Celsius"
+             oninput="convertFromCelsius()">
+
+             <!--Fahrenheit-->
+        <label>Fahrenheit</label>
+        <input  
+             type="number"
+             id="fahrenheit"
+             placeholder="Enter Fahrenheit"
+             oninput="convertFromFahrenheit()">
+
+             <!--Kelvin-->
+        <label>Kelvin</label>
+        <input  
+             type="number"
+             id="kelvin"
+             placeholder="Enter Kelvin"
+             oninput="convertFromKelvin()">
+    </main>
+
+
+     <!--FOOTER-->
+
+     <footer>
+        <p>
+            © 2026 AbdulQuadri Kuku |
+            <span id="currentDate"></span>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="temperature.js"></script>
+
+    
+</body>
+</html>
